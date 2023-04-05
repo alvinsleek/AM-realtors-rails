@@ -1,0 +1,13 @@
+<h1><%= @client.name %></h1>
+
+<dl>
+  <dt>Email:</dt>
+  <dd><%= @client.email %></dd>
+  <dt>Phone:</dt>
+  <dd><%= @client.phone %></dd>
+  <dt>Address:</dt>
+  <dd><%= @client.address %></dd>
+</dl>
+
+<%= link_to 'Edit', edit_client_path(@client) %> |
+<%= link_to 'Back', clients_path %>
